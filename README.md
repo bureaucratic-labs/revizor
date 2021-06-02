@@ -5,7 +5,7 @@ Imagine classic named entity recognition, but recognition done on product titles
 
 ## Install
 
-`revizor` requires python **3.8+** version **on Linux or macOS**, Windows **isn't supported** now (contributions are welcome).
+`revizor` requires python **3.8+** version **on Linux or macOS**, Windows **isn't supported** now, but contributions are welcome.
 
 ```bash
 $ pip install revizor
