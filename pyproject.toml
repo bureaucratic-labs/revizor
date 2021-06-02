@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "revizor"
+version = "0.1.0"
+description = "E-commerce product title recognition package"
+authors = ["Dima Veselov <d.a.veselov@yandex.ru>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+razdel = "^0.5.0"
+flair = "^0.8.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.5b2"
+mypy = "^0.812"
+isort = "^5.8.0"
+pytest = "^6.2.4"
+tox = "^3.23.1"
+pytest-cov = "^2.12.1"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
