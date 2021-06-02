@@ -1,4 +1,4 @@
-# revizor
+# revizor [![Test & Lint](https://github.com/bureaucratic-labs/revizor/actions/workflows/test-and-lint.yml/badge.svg)](https://github.com/bureaucratic-labs/revizor) [![codecov](https://codecov.io/gh/bureaucratic-labs/revizor/branch/main/graph/badge.svg?token=YHND3N25LI)](https://codecov.io/gh/bureaucratic-labs/revizor)
 
 This package solves task of splitting product title string into components, like `type`, `brand`, `model` and `article` (or SKU or product code or you name it).  
 Imagine classic named entity recognition, but recognition done on product titles.
