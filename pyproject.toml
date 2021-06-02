@@ -1,9 +1,22 @@
 [tool.poetry]
 name = "revizor"
-version = "0.1.0"
-description = "E-commerce product title recognition package"
+version = "0.1.1"
+description = "Ecommerce product title recognition package"
 authors = ["Dima Veselov <d.a.veselov@yandex.ru>"]
 license = "MIT"
+repository = "https://github.com/bureaucratic-labs/revizor"
+readme = "README.md"
+keywords = ["natural language processing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
