@@ -9,7 +9,7 @@ def test_predict(tagger: ProductTagger) -> None:
     assert product.type == "Смартфон"
     assert product.brand == "Apple"
     assert product.model == "iPhone 12 Pro"
-    assert product.article == "CY.563781.P273"
+    assert product.vendor_code == "CY.563781.P273"
 
 
 def test_predict_optional_field(tagger: ProductTagger) -> None:
@@ -18,4 +18,4 @@ def test_predict_optional_field(tagger: ProductTagger) -> None:
     assert product.type == "Смартфон"
     assert product.brand == "Apple"
     assert product.model == "iPhone 12 Pro"
-    assert product.article is None
+    assert product.vendor_code is None

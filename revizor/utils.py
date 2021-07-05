@@ -14,4 +14,4 @@ def _get_text_from_spans(text: str, spans: List[Span], tag: str) -> Optional[str
 _get_type_from_spans = partial(_get_text_from_spans, tag="TYPE")
 _get_brand_from_spans = partial(_get_text_from_spans, tag="BRAND")
 _get_model_from_spans = partial(_get_text_from_spans, tag="MODEL")
-_get_article_from_spans = partial(_get_text_from_spans, tag="ARTICLE")
+_get_vendor_code_from_spans = partial(_get_text_from_spans, tag="ARTICLE")

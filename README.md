@@ -1,6 +1,6 @@
 # revizor [![Test & Lint](https://github.com/bureaucratic-labs/revizor/actions/workflows/test-and-lint.yml/badge.svg)](https://github.com/bureaucratic-labs/revizor) [![codecov](https://codecov.io/gh/bureaucratic-labs/revizor/branch/main/graph/badge.svg?token=YHND3N25LI)](https://codecov.io/gh/bureaucratic-labs/revizor)
 
-This package solves task of splitting product title string into components, like `type`, `brand`, `model` and `article` (or SKU or product code or you name it).  
+This package solves task of splitting product title string into components, like `type`, `brand`, `model` and `vendor_code`.  
 Imagine classic named entity recognition, but recognition done on product titles.
 
 ## Install
@@ -22,7 +22,7 @@ product = tagger.predict("Смартфон Apple iPhone 12 Pro 128 gb Gold (CY.5
 assert product.type == "Смартфон"
 assert product.brand == "Apple"
 assert product.model == "iPhone 12 Pro"
-assert product.article == "CY.563781.P273"
+assert product.vendor_code == "CY.563781.P273"
 ```
 
 ## Boring numbers
@@ -35,10 +35,10 @@ Results:
 - F1-score (macro) 0.8766
 
 By class:
-ARTICLE    tp: 9893 - fp: 1899 - fn: 3268 - precision: 0.8390 - recall: 0.7517 - f1-score: 0.7929
-BRAND      tp: 47977 - fp: 2335 - fn: 514 - precision: 0.9536 - recall: 0.9894 - f1-score: 0.9712
-MODEL      tp: 35187 - fp: 11824 - fn: 9995 - precision: 0.7485 - recall: 0.7788 - f1-score: 0.7633
-TYPE       tp: 25044 - fp: 637 - fn: 443 - precision: 0.9752 - recall: 0.9826 - f1-score: 0.9789
+VENDOR_CODE    tp: 9893 - fp: 1899 - fn: 3268 - precision: 0.8390 - recall: 0.7517 - f1-score: 0.7929
+BRAND          tp: 47977 - fp: 2335 - fn: 514 - precision: 0.9536 - recall: 0.9894 - f1-score: 0.9712
+MODEL          tp: 35187 - fp: 11824 - fn: 9995 - precision: 0.7485 - recall: 0.7788 - f1-score: 0.7633
+TYPE           tp: 25044 - fp: 637 - fn: 443 - precision: 0.9752 - recall: 0.9826 - f1-score: 0.9789
 ```
 
 ## Dataset

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "revizor"
-version = "0.1.1"
+version = "0.2.0"
 description = "Ecommerce product title recognition package"
 authors = ["Dima Veselov <d.a.veselov@yandex.ru>"]
 license = "MIT"
